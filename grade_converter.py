@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Shanelle Alvarez
+# DATE: March 2, 2026
+# BRIEF DESCRIPTION: Grade Converter
 
 
 
@@ -15,22 +15,30 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-print('===== Grade Converter =====')
+def main():
+    grade_converter()
 
-percent = int(input('Enter a numerical grade (1-100): '))
+def grade_converter():
+    
+   print('===== Grade Converter =====')
+   
+   user_grade = int(input('Enter a numerical grade (1-100): '))
 
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
-else:
-    print('F')
+   if user_grade < 65:
+      print('F')
+   elif user_grade in range (65, 70): 
+      print('D')
+   elif user_grade in range (70 ,80):
+      print('C')
+   elif user_grade in range (80, 90):
+      print('B')
+   elif user_grade in range (90, 101):
+      print('A')
+   elif user_grade > 100:
+      print('A+')
+  
+main()
+
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -85,6 +93,7 @@ D
 1. What is something you would tell a future student to be careful about when
    doing this lab?
 
+ Pay attention to the ranges and indentations.
 
 
 
